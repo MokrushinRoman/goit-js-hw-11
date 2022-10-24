@@ -10,13 +10,13 @@ import {
   onSearchListEndingAlert,
   onSearchSuccessAlert,
 } from './notifix';
+import { page } from './index';
 
 let gallery = new SimpleLightbox('.gallery a');
 
 axios.defaults.baseURL = 'https://pixabay.com';
 const API_KEY = '30517244-e729ceb83709aa7ca3195b0ba';
 
-export let page = 1;
 let totalImg = 0;
 
 export async function fetchImg(query) {

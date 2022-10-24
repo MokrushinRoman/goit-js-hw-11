@@ -1,8 +1,9 @@
 import { refs } from './refs';
-import { page, fetchImg } from './API';
+import { fetchImg } from './API';
 import { onEmptySearchValueAlert } from './notifix';
 
-export let searchQuery = '';
+let searchQuery = '';
+export let page = 1;
 
 refs.form.addEventListener('submit', onFormSubmit);
 refs.loadMoreBtn.addEventListener('click', onLoadMoreClick);
